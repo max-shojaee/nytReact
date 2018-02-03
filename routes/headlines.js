@@ -1,5 +1,5 @@
-var scrape = require("../public/scripts/scrape");
-var makeDate = require("../public/scripts/date");
+var scrape = require("../public/javascripts/scrape");
+var makeDate = require("../public/javascripts/date");
 
 var Headline = require("../models/headline");
 

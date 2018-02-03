@@ -1,8 +1,14 @@
 var headlinesController = require("./headlines");
 var notesController = require("./notes");
+var express = require('express');
+var router = express.Router();
 
-module.exports = function(router) {
- 
+/*
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+*/
+
   router.get("/", function(req, res) {
     res.render("home");
   });
@@ -88,4 +94,11 @@ module.exports = function(router) {
       res.json(data);
     });
   });
+
+/*
+module.exports = function(router) {
+ 
+
 };
+*/
+module.exports = router;
