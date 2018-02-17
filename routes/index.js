@@ -1,104 +1,13 @@
-var headlinesController = require("./headlines");
-var notesController = require("./notes");
-var express = require('express');
-var router = express.Router();
+const path = require("path");
+const router = require("express").Router();
+const apiRoutes = require("./api");
 
-/*
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+// API Routes
+router.use("/api", apiRoutes);
+
+// If no API routes are hit, send the React app
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
-*/
 
-  router.get("/", function(req, res) {
-    res.render("home");
-  });
-
-  router.get("/saved", function(req, res) {
-    res.render("saved");
-  });
-
-  router.get("/api/fetch", function(req, res) {
- 
-    headlinesController.fetch(function(err, docs) {
-
-      if (!docs || docs.insertedCount === 0) {
-        res.json({
-          message: "No new articles today. Check back tomorrow!"
-        });
-      }
-      else {
-      
-        res.json({
-          message: "Added " + docs.insertedCount + " new articles!"
-        });
-      }
-    });
-  });
-
-  router.get("/api/headlines", function(req, res) {
-
-    headlinesController.get(req.query, function(data) {
-
-      res.json(data);
-    });
-  });
-
-  router.delete("/api/headlines/:id", function(req, res) {
-
-    var query = { _id: req.params.id };
-
-      headlinesController.delete(query, function(err, data) {
-   
-      res.json(data);
-    });
-  });
-
-  router.put("/api/headlines", function(req, res) {
-  
-    headlinesController.update(req.body, function(err, data) {
- 
-      res.json(data);
-    });
-  });
-
-  router.get("/api/notes/", function(req, res) {
-
-    notesController.get({}, function(err, data) {
-
-      res.json(data);
-    });
-  });
-
-  router.get("/api/notes/:headline_id", function(req, res) {
-    var query = { _id: req.params.headline_id };
-
-     notesController.get(query, function(err, data) {
-   
-      res.json(data);
-    });
-  });
-
-  router.delete("/api/notes/:id", function(req, res) {
-    var query = { _id: req.params.id };
-
-    notesController.delete(query, function(err, data) {
-   
-      res.json(data);
-    });
-  });
-
-
-  router.post("/api/notes", function(req, res) {
-    notesController.save(req.body, function(data) {
-
-      res.json(data);
-    });
-  });
-
-/*
-module.exports = function(router) {
- 
-
-};
-*/
 module.exports = router;
