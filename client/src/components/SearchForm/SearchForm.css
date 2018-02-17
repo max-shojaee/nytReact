@@ -1,0 +1,41 @@
+.formTitle {
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.form-group {
+  display: flex;
+  margin: 1.2em 0 0.3em 0;
+}
+
+.form-group input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: black;
+  font-size: 1em;
+}
+
+.form-group label {
+  margin: 0 0.7em 0 0.7em;
+}
+
+.button {
+  margin: 4 4 4 4;
+  border: 2px solid #fff;
+  align-self: center;
+  position: center;
+  color: purple;
+  width: 100px;
+  border-radius: 2px;
+  padding: 2 2 2 2;
+  background-color: lightgrey;
+  outline: none;
+}

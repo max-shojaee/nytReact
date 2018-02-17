@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.nav-left a {
+  margin-left: 2em;
+  text-decoration: none;
+  color: purple;
+}
+
+.nav-right a {
+  margin-right: 2em;
+  text-decoration: none;
+  color: purple;
+}
