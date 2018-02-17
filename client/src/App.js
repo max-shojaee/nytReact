@@ -15,7 +15,7 @@ class App extends Component {
         <div className="wrapper">
           <Header/>
           <div className="main">
-            <Title/>
+            <Title />
             <Route exact path="/" component={SearchAndResults}/>
             <Route exact path="/saved" component={Saved}/>
           </div>
