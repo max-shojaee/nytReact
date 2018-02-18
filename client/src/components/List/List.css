@@ -1,0 +1,43 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.list-group-item {
+  list-style: none;
+  border: 1px solid #fff;
+  display: flex;
+  padding: 2em;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.list-group-item p {
+  font-size: 0.7em;
+}
+
+.list-group-item h4 {
+  margin-top: 0px;
+}
+
+.buttons a {
+  align-self: center;
+}
+
+.btn {
+  margin-left: 0.8em;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.7em 2em 0.7em 2em;
+  background-color: purple;
+  outline: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,16 @@
+.title {
+  text-align: center;
+  padding: 2.5em;
+}
+
+.title h1 {
+  margin-top: 0;
+}
+
+.title h3 {
+  margin-bottom: 0;
+}
+
+.saved-title h3 {
+  text-align: center;
+}
