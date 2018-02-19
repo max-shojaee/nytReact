@@ -1,0 +1,56 @@
+2018-02-18T20:14:02.453039+00:00 app[api]: Release v1 created by user tomajid@yahoo.com
+2018-02-18T20:14:02.453039+00:00 app[api]: Initial release by user tomajid@yahoo.com
+2018-02-18T20:14:02.735640+00:00 app[api]: Enable Logplex by user tomajid@yahoo.com
+2018-02-18T20:14:02.735640+00:00 app[api]: Release v2 created by user tomajid@yahoo.com
+2018-02-18T20:14:29.999787+00:00 app[api]: Release v3 created by user tomajid@yahoo.com
+2018-02-18T20:14:29.999787+00:00 app[api]: Attach MONGODB (@ref:mongolab-horizontal-45988) by user tomajid@yahoo.com
+2018-02-18T20:15:19.000000+00:00 app[api]: Build started by user tomajid@yahoo.com
+2018-02-18T20:15:31.762672+00:00 app[api]: Release v4 created by user tomajid@yahoo.com
+2018-02-18T20:15:31.762672+00:00 app[api]: Deploy bb5ecad8 by user tomajid@yahoo.com
+2018-02-18T20:15:31.782671+00:00 app[api]: Scaled to web@1:Free by user tomajid@yahoo.com
+2018-02-18T20:15:19.000000+00:00 app[api]: Build succeeded
+2018-02-18T20:15:34.277712+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-02-18T20:15:36.459854+00:00 heroku[web.1]: State changed from starting to crashed
+2018-02-18T20:15:36.462680+00:00 heroku[web.1]: State changed from crashed to starting
+2018-02-18T20:15:36.280530+00:00 app[web.1]: > mern@1.0.0 start /app
+2018-02-18T20:15:36.280499+00:00 app[web.1]: 
+2018-02-18T20:15:36.280537+00:00 app[web.1]: > concurrently "nodemon server.js" "npm run client"
+2018-02-18T20:15:36.280539+00:00 app[web.1]: 
+2018-02-18T20:15:36.289139+00:00 app[web.1]: sh: 1: concurrently: not found
+2018-02-18T20:15:36.293634+00:00 app[web.1]: npm ERR! file sh
+2018-02-18T20:15:36.293902+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-02-18T20:15:36.294118+00:00 app[web.1]: npm ERR! errno ENOENT
+2018-02-18T20:15:36.294326+00:00 app[web.1]: npm ERR! syscall spawn
+2018-02-18T20:15:36.295364+00:00 app[web.1]: npm ERR! mern@1.0.0 start: `concurrently "nodemon server.js" "npm run client"`
+2018-02-18T20:15:36.295718+00:00 app[web.1]: npm ERR! 
+2018-02-18T20:15:36.295496+00:00 app[web.1]: npm ERR! spawn ENOENT
+2018-02-18T20:15:36.296024+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-02-18T20:15:36.295878+00:00 app[web.1]: npm ERR! Failed at the mern@1.0.0 start script.
+2018-02-18T20:15:36.304925+00:00 app[web.1]: 
+2018-02-18T20:15:36.305106+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-02-18T20:15:36.305228+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-02-18T20_15_36_297Z-debug.log
+2018-02-18T20:15:36.367639+00:00 heroku[web.1]: Process exited with status 1
+2018-02-18T20:15:38.930008+00:00 heroku[web.1]: Starting process with command `npm start`
+2018-02-18T20:15:40.857587+00:00 heroku[web.1]: Process exited with status 1
+2018-02-18T20:15:40.767235+00:00 app[web.1]: 
+2018-02-18T20:15:40.767251+00:00 app[web.1]: > mern@1.0.0 start /app
+2018-02-18T20:15:40.767253+00:00 app[web.1]: > concurrently "nodemon server.js" "npm run client"
+2018-02-18T20:15:40.767254+00:00 app[web.1]: 
+2018-02-18T20:15:40.782178+00:00 app[web.1]: sh: 1: concurrently: not found
+2018-02-18T20:15:40.787013+00:00 app[web.1]: npm ERR! file sh
+2018-02-18T20:15:40.787226+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2018-02-18T20:15:40.787404+00:00 app[web.1]: npm ERR! errno ENOENT
+2018-02-18T20:15:40.787571+00:00 app[web.1]: npm ERR! syscall spawn
+2018-02-18T20:15:40.788701+00:00 app[web.1]: npm ERR! mern@1.0.0 start: `concurrently "nodemon server.js" "npm run client"`
+2018-02-18T20:15:40.788841+00:00 app[web.1]: npm ERR! spawn ENOENT
+2018-02-18T20:15:40.789020+00:00 app[web.1]: npm ERR! 
+2018-02-18T20:15:40.789141+00:00 app[web.1]: npm ERR! Failed at the mern@1.0.0 start script.
+2018-02-18T20:15:40.789311+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2018-02-18T20:15:40.800139+00:00 app[web.1]: 
+2018-02-18T20:15:40.800371+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2018-02-18T20:15:40.800529+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2018-02-18T20_15_40_790Z-debug.log
+2018-02-18T20:15:40.907562+00:00 heroku[web.1]: State changed from starting to crashed
+2018-02-18T20:15:41.610374+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ms-nytreact.herokuapp.com request_id=65298ad3-1923-4432-a0ab-fc0252194cee fwd="70.95.89.60" dyno= connect= service= status=503 bytes= protocol=https
+2018-02-18T20:15:42.614346+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=ms-nytreact.herokuapp.com request_id=df423e70-de52-4be8-acd9-4bb3df398378 fwd="70.95.89.60" dyno= connect= service= status=503 bytes= protocol=https
+2018-02-18T20:24:05.879447+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=ms-nytreact.herokuapp.com request_id=0da4fda0-a2ff-4b35-81d5-a23efdc6cdfc fwd="70.95.89.60" dyno= connect= service= status=503 bytes= protocol=https
+2018-02-18T20:24:06.082815+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=ms-nytreact.herokuapp.com request_id=1788df6e-d986-471f-a4b6-eb2e89778c1b fwd="70.95.89.60" dyno= connect= service= status=503 bytes= protocol=https
